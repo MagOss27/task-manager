@@ -1,42 +1,60 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+.navbar-links li {
+  margin: 0 10px;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-links a.active {
+  background-color: white;
+  color: #4e54c8;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* App Container */
+.app-container {
+  padding: 20px;
+  margin-top: 10px;
+}
